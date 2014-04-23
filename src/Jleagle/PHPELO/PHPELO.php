@@ -4,38 +4,41 @@ namespace Jleagle\PHPELO;
 class PHPELO
 {
 
-    private $kFactor = 16;
+    private $kFactor;
 
-    private $ratingA;
-    private $ratingB;
-    private $scoreA;
-    private $scoreB;
     private $expectedA;
     private $expectedB;
     private $newRatingA;
     private $newRatingB;
 
-    public function  __construct($ratingA, $ratingB, $scoreA, $scoreB)
+    public function  __construct($ratingA, $ratingB, $scoreA, $scoreB, $kFactor = 16)
     {
 
-        $this->ratingA = $ratingA;
-        $this->ratingB = $ratingB;
-        $this->scoreA = $scoreA;
-        $this->scoreB = $scoreB;
+        $this->kFactor = $kFactor;
 
         // Get expected scores
-        $this->expectedA = 1 / (1 + (pow(10, ($this->ratingB - $this->ratingA) / 400)));
-        $this->expectedB = 1 / (1 + (pow(10, ($this->ratingA - $this->ratingB) / 400)));
+        $this->expectedA = $this->makeExpected($ratingB, $ratingA);
+        $this->expectedB = $this->makeExpected($ratingA, $ratingB);
 
         // Get new ratings
-        $this->newRatingA = $this->ratingA + ($this->kFactor * ($this->scoreA - $this->expectedA));
-        $this->newRatingB = $this->ratingB + ($this->kFactor * ($this->scoreB - $this->expectedB));
+        $this->newRatingA = $this->makeNewRating($ratingA, $scoreA, $this->expectedA);
+        $this->newRatingB = $this->makeNewRating($ratingB, $scoreB, $this->expectedB);
 
+    }
+
+    private function makeExpected($x, $y)
+    {
+        return 1 / (1 + (pow(10, ($x - $y) / 400)));
+    }
+
+    private function makeNewRating($x, $y, $z)
+    {
+        return $x + ($this->kFactor * ($y - $z));
     }
 
     public function getExpected()
     {
-        return array (
+        return array(
             'a' => $this->expectedA,
             'b' => $this->expectedB
         );
@@ -43,7 +46,7 @@ class PHPELO
 
     public function getRatings()
     {
-        return array (
+        return array(
             'a' => $this->newRatingA,
             'b' => $this->newRatingB
         );
