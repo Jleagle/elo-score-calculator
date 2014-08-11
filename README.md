@@ -31,12 +31,12 @@ $elo = new PHPELO(
 
 Get the chance of each player winning
 
-```
+```php
 $expectedScore = $elo->getExpected();
 ```
 
 Get the players new scores
 
-```
+```php
 $newRatings = $elo->getRatings();
 ```
