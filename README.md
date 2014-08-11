@@ -1,12 +1,42 @@
 PHPELO
 ======
 
-Calculate expected score and new ELO score 
+Calculate expected score and new ELO score
 
-    $elo = new \Jleagle\PHPELO\PHPELO(
-      100, 100, \Jleagle\PHPELO\PHPELO::WIN, \Jleagle\PHPELO\PHPELO::LOST
-    );
+## Usage
+
+Add PHPELO to your `composer.json`
+
+```
+{
+    "require": {
+        "jleagle/php-elo-rating-system": "dev-master"
+    }
+}
+```
+
+Download the package
+
+```
+$ php composer.phar update jleagle/php-elo-rating-system
+```
     
-    $expectedScore = $elo->getExpected();
-    
-    $newRatings = $elo->getRatings();
+Give PHPELO the players current scores and who won/lost/drew
+
+```php
+$elo = new PHPELO(
+  100, 100, PHPELO::WIN, PHPELO::LOST
+);
+```
+
+Get the chance of each player winning
+
+```
+$expectedScore = $elo->getExpected();
+```
+
+Get the players new scores
+
+```
+$newRatings = $elo->getRatings();
+```
