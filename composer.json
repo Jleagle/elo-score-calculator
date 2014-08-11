@@ -1,20 +1,24 @@
 {
-    "name": "jleagle/php-elo-rating-system",
-    "keywords": ["elo", "rating", "system"],
-    "authors": [
-        {
-            "name": "James Eagle",
-            "email": "jimeagle@gmail.com",
-            "homepage": "http://jimeagle.com",
-            "role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-0": {
-            "Jleagle\\PHPELO": "src"
-        }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+  "name":        "jleagle/php-elo-rating-system",
+  "keywords":    [
+    "elo",
+    "rating",
+    "system"
+  ],
+  "description": "Calculate expected score and new ELO score ",
+  "authors":     [
+    {
+      "name":     "James Eagle",
+      "email":    "jimeagle@gmail.com",
+      "homepage": "http://jimeagle.com"
     }
+  ],
+  "autoload":    {
+    "psr-4": {
+      "Jleagle\\PHPELO\\": "src"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.1.*"
+  }
 }
