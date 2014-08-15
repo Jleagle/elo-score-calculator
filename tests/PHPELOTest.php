@@ -10,8 +10,8 @@ class PHPELOTest extends PHPUnit_Framework_TestCase
     );
 
     $this->assertInstanceOf('\Jleagle\PHPELO\PHPELO', $elo);
-    $this->assertEquals(['a' => 0.5, 'b' => 0.5], $elo->getExpected());
-    $this->assertEquals(['a' => 108, 'b' => 92], $elo->getRatings());
+    $this->assertEquals(array('a' => 0.5, 'b' => 0.5), $elo->getExpected());
+    $this->assertEquals(array('a' => 108, 'b' => 92), $elo->getRatings());
 
   }
 
