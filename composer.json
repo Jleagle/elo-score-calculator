@@ -3,7 +3,9 @@
   "keywords":    [
     "elo",
     "rating",
-    "system"
+    "system",
+    "score",
+    "points"
   ],
   "description": "Calculate expected score and new ELO score ",
   "authors":     [
