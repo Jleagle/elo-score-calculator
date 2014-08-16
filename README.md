@@ -28,7 +28,11 @@ Give PHPELO the players current scores and who won/lost/drew
 
 ```php
 $elo = new PHPELO(
-  100, 100, PHPELO::WIN, PHPELO::LOST
+  90, 60, PHPELO::WIN, PHPELO::LOST
+);
+
+$elo = new PHPELO(
+  90, 90, PHPELO::DRAW, PHPELO::DRAW
 );
 ```
 
