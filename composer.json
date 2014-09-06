@@ -17,7 +17,7 @@
   ],
   "autoload":    {
     "psr-4": {
-      "Jleagle\\PHPELO\\": "src"
+      "Jleagle\\": "src"
     }
   },
   "require-dev": {

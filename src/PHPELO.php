@@ -1,5 +1,5 @@
 <?php
-namespace Jleagle\PHPELO;
+namespace Jleagle;
 
 class PHPELO
 {
