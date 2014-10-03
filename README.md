@@ -1,10 +1,12 @@
 PHPELO
 ======
 
-Calculate expected score and new ELO score
+[![Build Status (Travis)](https://img.shields.io/travis/Jleagle/elo-score-calculator/master.svg)](https://travis-ci.org/Jleagle/elo-score-calculator/builds)
+[![Code Quality (scrutinizer)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator/badges/quality-score.png)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator)
+[![Dependency Status (versioneye.com)](https://www.versioneye.com/php/Jleagle:elo-score-calculator/badge.png)](https://www.versioneye.com/php/Jleagle:elo-score-calculator)
+[![Downloads Total](https://poser.pugx.org/Jleagle/elo-score-calculator/downloads.svg)](https://packagist.org/packages/Jleagle/elo-score-calculator)
 
-[![Build Status](https://travis-ci.org/Jleagle/php-elo-rating-system.svg?branch=master)](https://travis-ci.org/jleagle/php-elo-rating-system)
-[![Total Downloads](https://poser.pugx.org/jleagle/php-elo-rating-system/downloads.svg)](https://packagist.org/packages/jleagle/php-elo-rating-system)
+Calculate expected score and new ELO score
 
 ## Usage
 
