@@ -59,10 +59,10 @@ class Elo
    */
   public function getExpected()
   {
-    return array(
+    return [
       'a' => $this->_expectedA,
       'b' => $this->_expectedB
-    );
+    ];
   }
 
   /**
@@ -70,9 +70,9 @@ class Elo
    */
   public function getRatings()
   {
-    return array(
+    return [
       'a' => $this->_newRatingA,
       'b' => $this->_newRatingB
-    );
+    ];
   }
 }
