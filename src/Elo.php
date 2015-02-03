@@ -1,9 +1,8 @@
 <?php
-namespace Jleagle;
+namespace Jleagle\Elo;
 
-class PHPELO
+class Elo
 {
-
   const WIN = 1;
   const LOST = 0;
   const DRAW = 0.5;
@@ -76,5 +75,4 @@ class PHPELO
       'b' => $this->_newRatingB
     );
   }
-
 }
