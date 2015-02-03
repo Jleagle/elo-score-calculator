@@ -10,12 +10,12 @@ Calculate expected score and new ELO score
 
 ## Usage
 
-Add PHPELO to your `composer.json`
+Add Elo to your `composer.json`
 
 ```
 {
     "require": {
-        "jleagle/php-elo-rating-system": "*"
+        "jleagle/elo-score-calculator": "*"
     }
 }
 ```
@@ -23,18 +23,18 @@ Add PHPELO to your `composer.json`
 Download the package
 
 ```
-$ php composer.phar update jleagle/php-elo-rating-system
+$ php composer.phar update jleagle/elo-score-calculator
 ```
     
-Give PHPELO the players current scores and who won/lost/drew
+Give Elo the players current scores and who won/lost/drew
 
 ```php
-$elo = new PHPELO(
-  90, 60, PHPELO::WIN, PHPELO::LOST
+$elo = new Elo(
+  90, 60, Elo::WIN, Elo::LOST
 );
 
-$elo = new PHPELO(
-  90, 90, PHPELO::DRAW, PHPELO::DRAW
+$elo = new Elo(
+  90, 90, Elo::DRAW, Elo::DRAW
 );
 ```
 
