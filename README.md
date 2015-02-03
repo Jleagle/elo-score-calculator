@@ -1,9 +1,10 @@
 PHPELO
 ======
 
-[![Build Status (Travis)](https://img.shields.io/travis/Jleagle/elo-score-calculator/master.svg)](https://travis-ci.org/Jleagle/elo-score-calculator/builds)
+[![Build Status (Scrutinizer)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator/badges/build.png)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator)
 [![Code Quality (scrutinizer)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator/badges/quality-score.png)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator)
-[![Dependency Status (versioneye.com)](https://www.versioneye.com/php/Jleagle:elo-score-calculator/badge.png)](https://www.versioneye.com/php/Jleagle:elo-score-calculator)
+[![Latest Stable Version](https://poser.pugx.org/Jleagle/elo-score-calculator/v/stable.png)](https://packagist.org/packages/Jleagle/elo-score-calculator)
+[![Latest Unstable Version](https://poser.pugx.org/Jleagle/elo-score-calculator/v/unstable.png)](https://packagist.org/packages/Jleagle/elo-score-calculator)
 
 Calculate expected score and new ELO score
 
