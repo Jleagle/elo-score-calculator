@@ -1,5 +1,4 @@
-PHPELO
-======
+# elo-score-calculator
 
 [![Build Status (Scrutinizer)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator/badges/build.png)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator)
 [![Code Quality (scrutinizer)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator/badges/quality-score.png)](https://scrutinizer-ci.com/g/Jleagle/elo-score-calculator)
